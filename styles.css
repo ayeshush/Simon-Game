@@ -1,0 +1,113 @@
+body {
+  text-align: center;
+  background-color: black;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url("./images/bg-image.png");
+  background-size: cover;
+}
+
+.content {
+  flex: 1;
+  padding-bottom: 60px;
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin: 3.5%;
+  color: #FEF2BF;
+}
+
+#high-score {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5rem;
+  margin-bottom: 3.5%;
+  color: #FEF2BF;
+}
+
+.container {
+  position: relative;
+  width: 460px; 
+  height: 460px; 
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.btn {
+  width: 210px;
+  height: 210px; 
+  position: absolute;
+  border: 10px solid black;
+}
+
+.red {
+  background-color: red;
+  top: 0;
+  right: 0;
+  border-top-right-radius: 100%;
+}
+
+.green {
+  background-color: green;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 100%;
+}
+
+.blue {
+  background-color: blue;
+  bottom: 0;
+  right: 0;
+  border-bottom-right-radius: 100%;
+}
+
+.yellow {
+  background-color: yellow;
+  bottom: 0;
+  left: 0;
+  border-bottom-left-radius: 100%;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px; 
+  height: 200px;
+  border-radius: 50%;
+  background-color: black;
+  background-image: url("./images/bg-image.png");
+  border: 10px solid black;
+  z-index: 1;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  color: #FEF2BF;
+  background-color: transparent;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 10px 0;
+  box-sizing: border-box; 
+}
