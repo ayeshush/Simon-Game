@@ -7,6 +7,7 @@ body {
   height: 100vh;
   background-image: url("./images/bg-image.png");
   background-size: cover;
+  user-select: none;
 }
 
 .content {
